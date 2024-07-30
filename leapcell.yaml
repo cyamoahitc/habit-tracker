@@ -1,0 +1,5 @@
+runtime: python
+startCommand: gunicorn -w 1 -b :8080 mysite.wsgi
+buildCommand: pip install -r requirements.txt
+port: 8080
+memory: 512mb
